@@ -1,0 +1,23 @@
+.container{
+    height: 60px;
+    background-color: #7100ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.input{
+    width: 300px;
+}
+.label{
+color: #ffffff;
+}
+.btn{
+    padding: 5px;
+    background-color: #6a18d2;
+    color: #ffffff;
+    border-color: transparent;
+}
+.btn:hover, .btn:focus{
+    background-color:#5c0ebe ;
+}

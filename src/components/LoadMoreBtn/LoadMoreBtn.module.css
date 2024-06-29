@@ -1,0 +1,12 @@
+.btn{
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #6a18d2;
+    color: #ffffff;
+    border-color: transparent;
+}
+.btn:hover, .btn:focus{
+    background-color:#5c0ebe ;
+}
