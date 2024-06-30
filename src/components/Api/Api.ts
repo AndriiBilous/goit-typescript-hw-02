@@ -7,14 +7,17 @@ export const fetchPictureFromGallery = async (
     topic: string,
     currentPage: number,
 ): Promise<ImageRegular[]> => {
-    const response = await axios.get('search/photos', {
-        params: {
-            client_id: clientId,
-            query: topic,
-            page: currentPage,
-            per_page: 4,
+    const response = await axios.get<{ results: ImageRegular[] }>(
+        'search/photos',
+        {
+            params: {
+                client_id: clientId,
+                query: topic,
+                page: currentPage,
+                per_page: 4,
+            },
         },
-    });
+    );
 
     return response.data.results;
 };
